@@ -1,0 +1,33 @@
+.dice-container {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+    cursor: pointer;
+  }
+
+  .dice-container img {
+    height: 100px;
+  }
+  .dice-container:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .dice-container:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .dice-container {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
